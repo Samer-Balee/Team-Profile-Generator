@@ -35,7 +35,15 @@ The user should clone the repository from GitHub and download Node. This applica
 
 ## Usage
 
-Use inquirer from your command line to answer questions about your project.
+ - Use inquirer from your command line to answer questions about your project:
+
+  ![screenshot-user-prompt](assets/images/screenshot-user-prompt.PNG).
+
+  - Will generate html page:
+
+  ![screenshot-team-page](assets/images/screenshot-team-page.PNG).
+
+
 
 ## License
 
@@ -47,6 +55,6 @@ Run npm test to run Jest for tests on constructors.
 
 ## Questions
 
-For any questions, please contact me directly at [email](samerbalee@gmail.com)  
+For any questions, please contact me directly at (samerbalee@gmail.com)  
 
-You can view more of my projects at  [github](https://github.com/Samer-Balee)
+You can view more of my projects at  [GitHub](https://github.com/Samer-Balee)
