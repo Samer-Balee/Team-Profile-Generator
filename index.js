@@ -12,7 +12,7 @@ const inquirer = require('inquirer');
 
 const teamArray = [];
 
-//Promp the user about manager details
+//Prompt the user about manager details
 
 const addManager = () => {
     return inquirer.prompt([
@@ -45,7 +45,7 @@ const addManager = () => {
         },
         {
             type: 'input',
-            name: 'emai',
+            name: 'email',
             message: "Please enter the manager's email?",
             validate: email => {
                 valid = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)
@@ -75,11 +75,11 @@ const addManager = () => {
         },
     ])
         .then(managerInput => {
+
             const { name, id, email, officeNumber } = managerInput;
             const manager = new Manager(name, id, email, officeNumber);
 
             teamArray.push(manager);
-            console.log(manager);
         })
 }
 
@@ -106,7 +106,7 @@ const addEmployee = () => {
                     return true;
                 } else {
                     console.log(`
-                    "Please enter employee's name!"
+                "Please enter employee's name!"
                     `);
                     return false;
                 }
@@ -119,7 +119,7 @@ const addEmployee = () => {
             validate: nameInput => {
                 if (isNaN(nameInput)) {
                     console.log(`
-                    "Please enter the employee's ID!"
+                "Please enter the employee's ID!"
                     `)
                     return false;
                 } else {
@@ -137,7 +137,7 @@ const addEmployee = () => {
                     return true;
                 } else {
                     console.log(`
-                    'Please enter an email!'
+                "Please enter an email!"
                     `)
                     return false;
                 }
@@ -153,7 +153,7 @@ const addEmployee = () => {
                     return true;
                 } else {
                     console.log(`
-                    "Please enter the employee's github username!"
+                "Please enter the employee's github username!"
                     `)
                 }
             }
@@ -168,7 +168,7 @@ const addEmployee = () => {
                     return true;
                 } else {
                     console.log(`
-                    "Please enter the intern's school!"
+                "Please enter the intern's school!"
                     `)
                 }
             }
@@ -189,12 +189,9 @@ const addEmployee = () => {
             if (role === "Engineer") {
                 employee = new Engineer(name, id, email, github);
 
-                console.log(employee);
-
             } else if (role === "Intern") {
                 employee = new Intern(name, id, email, school);
 
-                console.log(employee);
             }
 
             teamArray.push(employee);

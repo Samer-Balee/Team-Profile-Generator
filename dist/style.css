@@ -8,6 +8,7 @@ body {
 }
 
 #navbar {
+    height: 200px;
     background-color: rgb(172, 61, 61);
     color: white;
     font-size: 100px;
@@ -26,6 +27,7 @@ body {
 .card-body {
     background-color: white;
     color: rgb(65, 119, 43);
+    font-weight: bolder;
 }
 
 .container {
@@ -36,6 +38,6 @@ body {
 }
 
 .email , .office ,.id , .github , .school {
-    border: 0.5px solid rgb(54, 54, 54);
+    border-bottom: 0.2px solid rgb(54, 54, 54);
    
 }
