@@ -9,6 +9,8 @@ This project demonstrates use of OOP and TDD using Jest.
 
 A link to a walkthrough video that demonstrates the functionality of the Team Profile Generator and passing tests is here: [video](assets/records/demo.webm)
 
+A sample HTML file generated using this application is here [team.html](dist/team.html)
+
 ## Table of contents
 
   - [Describtion](#describtion)
